@@ -49,5 +49,5 @@ function moveHat() {
     hatIndex = 1;
   }
   x[hatIndex - 1].style.display = "block";
-  setTimeout(moveHat, 9000); // Move hat every 9 seconds
+  setTimeout(moveHat, 8000); // Move hat every 8 seconds
 }

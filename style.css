@@ -1,6 +1,12 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-size: cover;
-  background-color: rgb(166, 219, 243);
+  background-color: #f6efea;
 }
 
 h1 {
@@ -9,20 +15,20 @@ h1 {
   justify-content: center;
   overflow: hidden;
   text-align: center;
-  margin-top: 10px;
-  margin-bottom: -20px;
+  /* margin-top: 10px;
+  margin-bottom: -20px; */
+  margin: 0;
   width: 100vw;
-  height: 10vh;
   color: #000;
   font-family: "Maitree", serif;
-  font-size: 3em;
+  font-size: 70px;
   font-weight: normal;
 }
 
 /* s'applique à tout le html : balises utilisées pour l'animation du titre et de la bio */
 :root {
   /* titre */
-  --bg-color: rgb(166, 219, 243);
+  --bg-color: #f6efea;
   /* bio et name */
   --underline-intrinsic-width: 8;
   --underline-width: 12;
@@ -109,7 +115,8 @@ h1 {
 .stat {
   font-family: "Roboto Slab", serif;
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
+  margin: 0;
   margin-left: 10%;
   margin-right: 10%;
   margin-bottom: 5%;
@@ -124,10 +131,15 @@ h1 {
   margin-top: -80px;
 }
 
-.container {
+.women {
+  /* comment le rendre responsive??? */
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
+  /* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
   margin-top: -485px;
 }
 
@@ -218,3 +230,42 @@ h1 {
     auto calc(var(--underline-width) * 1px),
     auto calc(var(--underline-width) * 1px);
 }
+
+@media screen and (max-width: 900px) {
+  .h1 {
+    font-size: 20px;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  form {
+    width: 290px;
+  }
+
+  .login-content h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+
+  .img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .login-content {
+    justify-content: center;
+  }
+} */
